@@ -7,12 +7,15 @@ import io.rsocket.RSocketFactory;
 import io.rsocket.transport.netty.client.TcpClientTransport;
 import io.rsocket.transport.netty.server.TcpServerTransport;
 import io.rsocket.util.DefaultPayload;
+import org.apache.log4j.BasicConfigurator;
 import reactor.core.Disposable;
 import reactor.core.publisher.Mono;
 
 public class TcpFireForgetExample {
 
   public static void main(String[] args) throws Exception {
+    BasicConfigurator.configure();
+
     final int port = 7777;
 
     RSocket responseHandler = new AbstractRSocket() {
