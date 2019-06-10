@@ -4,7 +4,7 @@ Examples for implementing client-server communication over TCP and Websocket con
 with Java (TM) and [RSocket].
 
 Please feel free to visit [my blog] at for the full tutorial.
-
+.
 ----
 
 **2018 Micha Kops / hasCode.com**
